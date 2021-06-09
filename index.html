@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERAKOMP SUB MENU</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <h1 style="margin-top: 8%; text-align: center; color:white !important;" class="ml2">ERAKOMP SUB MENU</h1>
+
+    <div class="menu">
+        <input type="checkbox" id="toggle" />
+        <label id="show-menu" for="toggle">
+            <div class="btn">
+                <img src="https://cdn.erakomp.co.id/assets/img/logo-erakomp-small.png" alt="" srcset="" width="50">
+            </div>
+            <div class="btn " style="background-color: transparent;">
+                <a class="unit" href="https://blog2.erakomp.co.id/"><img title="Erablog"
+                        src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20Erablog-01.png"
+                        alt="" srcset="" width=" 60"></a>
+            </div>
+            <div class="btn" style="background-color: transparent;">
+                <a class="unit" href="https://helpdesk.erakomp.co.id/"><img title="Helpdesk"
+                        src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20Helpdesk-01.png"
+                        alt="" srcset="" width="60"></a>
+            </div>
+            <div class="btn" style="background-color: transparent;">
+                <a class="unit" href="https://erakomp.co.id:4435/login"><img title="HRD Application"
+                        src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20HRD-01.png" alt=""
+                        width="60"></a>
+            </div>
+            <div class="btn" style="background-color: transparent;">
+                <a class="unit" href="https://www.erakomp.co.id:8888/"><img title="Eraplus"
+                        src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20Eraplus-01.png"
+                        width="60" alt=""></a>
+            </div>
+            <div class="btn" style="background-color: transparent;">
+                <a class="unit" href="https://www.erakomp.co.id/"><img title="Erakomp E-commerce"
+                        src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20Erakomp-01.png"
+                        width="60" alt=""></a>
+            </div>
+            <div class="btn" style="background-color: transparent;">
+                <a class="unit" href="https://belipintar.co.id/"><img title="Company Profile"
+                        src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20Belpin-01.png"
+                        width="60" alt=""></a>
+            </div>
+            <div class="btn" style="background-color: transparent;">
+                <a class="unit" href="https://www.erakomp.co.id:1111/"><img title="Era Force"
+                        src="https://erakomp.oss-ap-southeast-5.aliyuncs.com/assets/img/ApplicationForApplications/Logo%20EraForce-01.png"
+                        width="60" alt=""></a>
+            </div>
+            <div class="btn" style="background-color: transparent;">
+                <a class="unit" href="https://timeline.erakomp.co.id/auth/login"><img title="SO Timeline"
+                        src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20SO%20Tracking-01.png"
+                        width="60" alt=""></a>
+            </div>
+        </label>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml2');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml2 .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: (el, i) => 70 * i
+            }).add({
+                targets: '.ml2',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml2');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: true })
+        .add({
+            targets: '.ml2 .letter',
+            scale: [4, 1],
+            opacity: [0, 1],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 950,
+            delay: (el, i) => 70 * i
+        }).add({
+            targets: '.ml2',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+</script>
+
+</html>
