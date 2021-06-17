@@ -17,7 +17,7 @@ body {
     width: 100%;
     opacity: 1;
 	/*background: linear-gradient(to bottom, #020111 10%,#3a3a52 100%);*/
-	background: url(https://cdn.statically.io/img/wallpapermemory.com/uploads/477/galaxy-wallpaper-full-hd-1920x1080-443751.jpg) repeat;
+	background: url(https://wallpaperaccess.com/full/1188566.jpg) repeat;
     background-size: cover;
 	-webkit-animation: backdrop_roll linear 100s infinite;
     -moz-animation: backdrop_roll linear 100s infinite;
@@ -118,7 +118,7 @@ body {
 	width: 5px;
 	height: 5px;	
 	border-radius: 3px;
-	background: rgb(0, 38, 255);
+	background: rgb(255, 18, 30);
 	z-index: 900;
 }
 
