@@ -110,7 +110,7 @@ body {
 	border-radius: 5px;
 	
 	margin-left: -5px;
-	background: red;
+	background: rgb(243, 255, 82);
 	z-index: 1000;
 }
 .enemy-bullet {
@@ -118,7 +118,7 @@ body {
 	width: 5px;
 	height: 5px;	
 	border-radius: 3px;
-	background: green;
+	background: rgb(0, 38, 255);
 	z-index: 900;
 }
 
