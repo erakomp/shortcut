@@ -5,11 +5,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ERAKOMP APPS MENU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn.erakomp.co.id/assets/img/erakomp_logo.png">
 </head>
 
+
+
 <body>
-    <p>UNDER CONS</p>
+    <div>
+
+        <h1 class="ml2">WELCOME TO ERAKOMP</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="icon">
+            <div class="logo"><img src="https://cdn.erakomp.co.id/assets/img/logo-erakomp-small.png" alt="" srcset=""
+                    width="100" style="padding:5%; margin-top:15px;"></div>
+            <ul class="menu">
+
+                <li class="spread">
+                    <a class="unit" href="#"><img
+                            src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20Erablog-01.png"
+                            alt="" width="50"></a>
+                </li>
+
+                <li class="spread">
+                    <a class="unit" href="https://helpdesk.erakomp.co.id/"><img
+                            src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20Helpdesk-01.png"
+                            alt="" srcset="" width="50"></a>
+                </li>
+
+                <li class="spread">
+                    <a class="unit" href="https://erakomp.co.id:4435/login"><img
+                            src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20HRD-01.png"
+                            alt="" width="50"></a>
+                </li>
+
+                <li class="spread">
+                    <a class="unit" href="https://www.erakomp.co.id:8888/"><img
+                            src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20Eraplus-01.png"
+                            width="50" alt=""></a>
+                </li>
+
+                <li class="spread">
+                    <a class="unit" href="https://www.erakomp.co.id/"><img
+                            src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20Erakomp-01.png"
+                            width="50" alt=""></a>
+                </li>
+
+                <li class="spread">
+                    <a class="unit" href="https://belipintar.co.id/"><img
+                            src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20Belpin-01.png"
+                            width="50" alt=""></a>
+                </li>
+
+                <li class="spread">
+                    <a class="unit" href="https://www.duniaperkakas.co.id/"><img
+                            src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20Dunia%20Perkakas-01.png"
+                            width="50" alt=""></a>
+                </li>
+
+                <li class="spread">
+                    <a class="unit" href="https://timeline.erakomp.co.id/auth/login"><img
+                            src="https://cdn.erakomp.co.id/assets/img/ApplicationForApplications/Logo%20SO%20Tracking-01.png"
+                            width="50" alt=""></a>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml2');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml2 .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: (el, i) => 70 * i
+            }).add({
+                targets: '.ml2',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
 </body>
 
 </html>
