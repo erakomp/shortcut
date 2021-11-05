@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Google Picker Example</title>
+
+
+</head>
+
+<body>
+    <input type="button" id="btnClick" value="Get AlternateLanguages" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script>
+
+        $(function () {
+
+            $("#btnClick").click(function () {
+
+                var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/supportedUILanguageIds";
+
+                $.ajax({
+
+                    url: requestUri,
+
+                    type: "GET",
+
+                    headers: {
+
+                        "accept": "application/json;odata=verbose",
+
+                        "content-type": "application/json;odata=verbose",
+
+                        "X-RequestDigest": $("#_REQUESTDIGEST").val()
+
+                    },
+
+                    success: onSuccess,
+
+                    error: onError
+
+                });
+
+                function onSuccess(data) {
+
+                    var value = data.d.SupportedUILanguageIds.results;
+
+                    alert(value);
+
+                    for (var i = 0; i < value.length; i++) {
+
+                        alert(value[i]);
+
+                    }
+
+                }
+
+                function onError(error) {
+
+                    alert('Error');
+
+                }
+
+            });
+
+        });
+
+    </script>
+</body>
+
+
+</html>
